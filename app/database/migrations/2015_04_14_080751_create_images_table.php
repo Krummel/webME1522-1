@@ -17,7 +17,7 @@ class CreateImagesTable extends Migration {
 			$table->increments('id');
 			$table->string('image_name');
 			$table->string('image_desc');
-			$table->binary('image_info');
+			$table->string('image_info');
 			$table->enum('isAdmin',array(0,1))->default(0);
 			$table->timestamps();
 		});
